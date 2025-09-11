@@ -6,7 +6,7 @@ class Solution {
         Map<Integer, Integer> indexMap = new HashMap<>();
 
         for (int i = 0; i < nums.length; i++) {
-            int current = nums[i]; 
+            int current = nums[i];  
             int complement = target - current; 
             if (indexMap.containsKey(complement)) {
                 return new int[] {indexMap.get(complement), i};
